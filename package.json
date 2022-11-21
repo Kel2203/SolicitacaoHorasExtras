@@ -9,12 +9,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@date-io/dayjs": "^2.16.0",
+    "@emotion/react": "^11.10.5",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.10.14",
+    "@mui/material": "^5.10.14",
+    "@mui/x-date-pickers": "^5.0.8",
+    "@sendgrid/mail": "^7.7.0",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
+    "googleapis": "^109.0.1",
     "next": "13.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.39.4",
     "typescript": "4.9.3"
   }
 }
