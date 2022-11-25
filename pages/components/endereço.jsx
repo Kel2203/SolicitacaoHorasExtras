@@ -276,9 +276,7 @@ console.log(nome, email, justificativa, hora, time, periodo, data);};
                 Sheets
               </Button> */}
 
-      <Button  sx={{ mt: 3, ml: 6 , bgcolor:"black",color:"yellow"}} type="reset" startIcon={<SyncRoundedIcon />}>
-                  Resetar
-                </Button>
+     
                 
                 <Fab variant="extended" color="primary" aria-label="add"
                 onClick={handleOnSubmit}
