@@ -115,20 +115,14 @@ function Copyright() {
     ><FormControlLabel
     control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked onClick={colorMode.toggleColorMode}/>} 
   />
-      {/* <Toolbar sx={{  minWidth:220, m:0, p:0, bgcolor:"yellow", color: 'black', }}>
-        <Typography variant="h6" color="inherit" noWrap sx={{display: 'flex', justifyContent: 'flex-center',flexGrow: 1   }} component="h1"
-
-              >
-          Solicitação de Horas Extras
-        </Typography>
-      </Toolbar> */}
+     
     </AppBar>
     <Container component="main" maxWidth="sm" sx={{ mb: 4 }}>
       <Paper variant="outlined" sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 }, }}>
         <Typography component="h1" variant="h4" align="center">
           Dados da Solicitação
         </Typography>
-        <AddressForm />
+        <Inputs />
        
       </Paper>
       <Copyright />
