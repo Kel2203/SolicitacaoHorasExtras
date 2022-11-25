@@ -20,7 +20,7 @@ import Button from '@mui/material/Button';
 import TaskAltRoundedIcon from '@mui/icons-material/TaskAltRounded';
 import ForwardToInboxRoundedIcon from '@mui/icons-material/ForwardToInboxRounded';
 
-export default function AddressForm() {
+export default function Inputs() {
   
 
   const [nome, setNome] = useState("");
