@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/api/sendgrid.js", "pages/index.jsx", "pages/components/inputs.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/api/sendgrid.jsx", "pages/index.jsx", "pages/components/inputs.jsx"],
   "exclude": ["node_modules"]
 }
