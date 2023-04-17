@@ -33,22 +33,22 @@ export const ColorModeProvider = ({children}: ColorModeProps)=>{
             },
             palette: {
               primary: {
-                main: '#00DB96',
+                main: '#9374fa',
               },
               secondary: {
-                main: '#04F1D9',
+                main: '#9374fa',
               },
               mode:
                 mode === 'light'
                   ? 'light'
                   : 'dark',
               background: {
-                default: mode === 'light' ? '#FFF' : '#000',
+                default: mode === 'light' ? '#FFF' : '#050409',
                 paper: mode === 'light' ? '#FFF' : '#000',
               },
               text: {
-                primary: mode === 'light' ? '#000000' : '#ffffff',
-                secondary: mode === 'light' ? '#000000' : '#ffffff',
+                primary: mode === 'light' ? '#9374fa' : '#9374fa',
+                secondary: mode === 'light' ? '9f76ff' : '#9374fa',
               },
             },
             components: {
@@ -152,8 +152,7 @@ export const ColorModeProvider = ({children}: ColorModeProps)=>{
             shape: {
               borderRadius: 20,
             },
-            
-              
+           
             },
           ),
         [mode],

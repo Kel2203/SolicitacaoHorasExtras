@@ -8,11 +8,12 @@ export default function Inputs () {
   return (
     <>
       <form>
-        <Grid container spacing={2}>
+        <Grid container spacing={2} >
           <Grid item xs={12} sm={12}>
             <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
               <AccountCircle sx={{ color: 'action.active', mr: 1, my: 1.7 }} />
               <TextField
+               variant="standard"
                 color="primary"
                 id="input"
                 label="Nome"
@@ -25,10 +26,11 @@ export default function Inputs () {
             <FormControl
               sx={{ width: '95%', m: 1 }}
             >
-              <InputLabel id="demo-simple-select-standard-label">
-               Equipe
+              <InputLabel id="demo-simple-select-standard-label" sx={{ ml: -1.7 }}>
+              Equipe:
               </InputLabel>
               <Select
+               variant="standard"
                 required
                 labelId="demo-simple-select-standard-label"
                 id="demo-simple-select-standard"
@@ -52,7 +54,7 @@ export default function Inputs () {
             </FormControl>
           </Grid>
           <Grid item xs={12} sm={6}>
-            <FormControl sx={{ m: 1, minWidth: '95%' }} placeholder='teste'>
+            <FormControl sx={{ m: 1, minWidth: '95%' }} placeholder='teste' variant="standard">
               <InputLabel id="demo-simple-select-standard-label">
                 Período:
               </InputLabel>
@@ -70,6 +72,7 @@ export default function Inputs () {
 
           <Grid item xs={12} sm={6}>
             <TextField
+           variant="standard"
               required
               id="date"
               label="Data:"
@@ -84,6 +87,7 @@ export default function Inputs () {
           </Grid>
           <Grid item xs={12} sm={6}>
             <TextField
+             variant="standard"
               required
               id="time"
               label="Horas solicitadas:"
@@ -100,6 +104,7 @@ export default function Inputs () {
           </Grid>
           <Grid item xs={12} sm={6}>
             <TextField
+             variant="standard"
               id="standard-multiline-flexible"
               label="Justificativa"
               multiline
@@ -110,6 +115,7 @@ export default function Inputs () {
           </Grid>
           <Grid item xs={12} sm={6}>
             <TextField
+            variant="standard"
               id="email"
               label="Autorizado por:"
               required
@@ -125,7 +131,7 @@ export default function Inputs () {
                 Sheets
               </Button> */}
           <Box
-            sx={{ display: 'flex', alignItems: 'flex-end', ml: { xs: '0%', sm: '16%', md: '20%', lg: '22%', xl: '25%' }, mt: { xs: '10%', sm: '10%', md: '8%', lg: '5%', xl: '5%' } }}
+            sx={{ display: 'flex', alignItems: 'flex-end', ml: { xs: '0%', sm: '16%', md: '20%', lg: '22%', xl: '20%' }, mt: { xs: '10%', sm: '10%', md: '8%', lg: '5%', xl: '5%' } }}
           >
             <Fab
               variant="extended"
