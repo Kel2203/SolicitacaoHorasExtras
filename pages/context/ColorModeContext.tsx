@@ -22,10 +22,140 @@ export const ColorModeProvider = ({children}: ColorModeProps)=>{
     const theme = React.useMemo(
         () =>
           createTheme({
-            palette: {
-              mode,
+            breakpoints: {
+              values: {
+                xs: 0,
+                sm: 600,
+                md: 960,
+                lg: 1280,
+                xl: 1920,
+              },
             },
-          }),
+            palette: {
+              primary: {
+                main: '#00DB96',
+              },
+              secondary: {
+                main: '#04F1D9',
+              },
+              mode:
+                mode === 'light'
+                  ? 'light'
+                  : 'dark',
+              background: {
+                default: mode === 'light' ? '#FFF' : '#000',
+                paper: mode === 'light' ? '#FFF' : '#000',
+              },
+              text: {
+                primary: mode === 'light' ? '#000000' : '#ffffff',
+                secondary: mode === 'light' ? '#000000' : '#ffffff',
+              },
+            },
+            components: {
+              MuiButton: {
+                styleOverrides: {
+                  root: {
+                    borderRadius: 20 / 2,
+                  },
+                },
+              },
+              MuiPaper: {
+                styleOverrides: {
+                  root: {
+                    backgroundColor: mode === 'light' ? '#FFFBFF' : '#202020',
+                    borderRadius: 20 / 2,
+                  },
+                },
+              },
+            },
+            typography: {
+              fontFamily: [
+                'Roboto',
+                'sans-serif',
+              ].join(','),
+              button: {
+                textTransform: 'none',
+              },
+              h1: {
+                fontSize: '2.5rem',
+                fontWeight: 500,
+                lineHeight: 1.167,
+                letterSpacing: '0em',
+              },
+              h2: {
+                fontSize: '2rem',
+                fontWeight: 500,
+                lineHeight: 1.2,
+                letterSpacing: '0em',
+              },
+              h3: {
+                fontSize: '1.75rem',
+                fontWeight: 500,
+                lineHeight: 1.167,
+                letterSpacing: '0em',
+              },
+              h4: {
+                fontSize: '1.5rem',
+                fontWeight: 500,
+                lineHeight: 1.235,
+                letterSpacing: '0em',
+              },
+              h5: {
+                fontSize: '1.25rem',
+                fontWeight: 500,
+                lineHeight: 1.334,
+                letterSpacing: '0em',
+              },
+              h6: {
+                fontSize: '1rem',
+                fontWeight: 500,
+                lineHeight: 1.6,
+                letterSpacing: '0em',
+              },
+              subtitle1: {
+                fontSize: '1rem',
+                fontWeight: 400,
+                lineHeight: 1.75,
+                letterSpacing: '0.00938em',
+              },
+              subtitle2: {
+                fontSize: '0.875rem',
+                fontWeight: 500,
+                lineHeight: 1.57,
+                letterSpacing: '0.00714em',
+              },
+              body1: {
+                fontSize: '0.875rem',
+                fontWeight: 400,
+                lineHeight: 1.43,
+                letterSpacing: '0.01071em',
+              },
+              body2: {
+                fontSize: '0.875rem',
+                fontWeight: 400,
+                lineHeight: 1.43,
+                letterSpacing: '0.01071em',
+              },
+              caption: {
+                fontSize: '0.75rem',
+                fontWeight: 400,
+                lineHeight: 1.66,
+                letterSpacing: '0.03333em',
+              },
+              overline: {
+                fontSize: '0.75rem',
+                fontWeight: 400,
+                lineHeight: 2.66,
+                letterSpacing: '0.08333em',
+              },
+            },
+            shape: {
+              borderRadius: 20,
+            },
+            
+              
+            },
+          ),
         [mode],
       );
     
