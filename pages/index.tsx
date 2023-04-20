@@ -5,7 +5,7 @@ import CssBaseline from '@mui/material/CssBaseline'
 
 import Link from '@mui/material/Link'
 import Typography from '@mui/material/Typography'
-
+import Lists from './components/Lists'
 import Inputs from './components/inputs'
 import Paper2 from './components/Paper2'
 import background from './styled.module.css'
@@ -37,7 +37,7 @@ export default function Home() {
       <CssBaseline />
       <div className={background.gradient}  >
         <NavBar/>
-   
+   <Lists />
         <Paper2 />
         <Papers>
           <Typography

@@ -63,7 +63,7 @@ export const ColorModeProvider = ({children}: ColorModeProps)=>{
                 styleOverrides: {
                   root: {
                     backgroundColor: mode === 'light' ? '#FFFBFF' : '#202020',
-                    borderRadius: 20 / 2,
+                    boxShadow: mode === 'light' ? '0px 0px 10px #0000001A' : '0px 0px 10px #0000001A',
                   },
                 },
               },
