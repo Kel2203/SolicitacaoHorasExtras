@@ -118,7 +118,7 @@ export default function PersistentDrawerLeft() {
         open={open}
       >
         <DrawerHeader>
-          <IconButton onClick={handleDrawerClose}>
+          <IconButton onClick={handleDrawerClose} color='secondary'>
             {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
           </IconButton>
         </DrawerHeader>
@@ -127,10 +127,10 @@ export default function PersistentDrawerLeft() {
           {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
+                <ListItemIcon color='secondary'>
+                  {index % 2 === 0 ? <InboxIcon color="primary"/> : <MailIcon color="primary"/>}
+                </ListItemIcon >
+                <ListItemText primary={text}  />
               </ListItemButton>
             </ListItem>
           ))}
@@ -140,8 +140,8 @@ export default function PersistentDrawerLeft() {
           {['All mail', 'Trash', 'Spam'].map((text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                <ListItemIcon color="primary">
+                  {index % 2 === 0 ? <InboxIcon color="primary"/> : <MailIcon color="primary"/>}
                 </ListItemIcon>
                 <ListItemText primary={text} />
               </ListItemButton>
