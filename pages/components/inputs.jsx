@@ -11,7 +11,7 @@ export default function Inputs () {
         <Grid container spacing={2} >
           <Grid item xs={12} sm={12}>
             <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
-              <AccountCircle sx={{ color: 'action.active', mr: 1, my: 1.7 }} />
+              <AccountCircle sx={{ color: '#9374fa', mr: 1, my: 0.4 }} />
               <TextField
                variant="standard"
                 color="primary"
