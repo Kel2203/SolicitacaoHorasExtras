@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography'
 import Lists from './components/Lists'
 import Inputs from './components/inputs'
 import Paper2 from './components/Paper2'
-import background from './styled.module.css'
+import background from './styled.module.sass'
 import Papers from './components/Paper'
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";

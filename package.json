@@ -26,7 +26,8 @@
     "next": "13.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-hook-form": "^7.39.4"
+    "react-hook-form": "^7.39.4",
+    "sass": "^1.62.1"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^13.0.4",
