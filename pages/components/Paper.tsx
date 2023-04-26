@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Paper as MaterialUIPaper, PaperProps } from '@mui/material';
 import styled from '@emotion/styled';
-import estilo from './estilo.module.css'
+import estilo from './estilo.module.sass'
 
 export default function Paper(props: PaperProps) {
     const { children, sx, ...other } = props;
