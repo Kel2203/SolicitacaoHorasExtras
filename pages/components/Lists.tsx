@@ -16,8 +16,8 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import TripOriginIcon from '@mui/icons-material/TripOrigin';
+import TaskAltIcon from '@mui/icons-material/TaskAlt';
 import SpaIcon from '@mui/icons-material/Spa'
 import Display from './Display';
 const drawerWidth = 240;
@@ -124,11 +124,11 @@ export default function PersistentDrawerLeft() {
         </DrawerHeader>
         <Divider />
         <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+          {['Home', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
                 <ListItemIcon color='secondary'>
-                  {index % 2 === 0 ? <InboxIcon color="primary"/> : <MailIcon color="primary"/>}
+                  {index % 2 === 0 ? <TripOriginIcon color="primary"/> : <TaskAltIcon color="primary"/>}
                 </ListItemIcon >
                 <ListItemText primary={text}  />
               </ListItemButton>
@@ -141,7 +141,7 @@ export default function PersistentDrawerLeft() {
             <ListItem key={text} disablePadding>
               <ListItemButton>
                 <ListItemIcon color="primary">
-                  {index % 2 === 0 ? <InboxIcon color="primary"/> : <MailIcon color="primary"/>}
+                  {index % 2 === 0 ? <TripOriginIcon color="primary"/> : <TaskAltIcon color="primary"/>}
                 </ListItemIcon>
                 <ListItemText primary={text} />
               </ListItemButton>
